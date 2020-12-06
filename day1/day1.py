@@ -1,17 +1,20 @@
-class Day1:
+from utils.base import Day
+
+
+class Day1(Day):
 
     def __init__(self, expense_report):
         self.expense_report = set(map(lambda line: int(line), expense_report))
         self.total = 2020
 
-    def solution(self):
+    def part1(self):
         for expense_line in self.expense_report:
             partial = self.total - expense_line
 
             if partial in self.expense_report:
-                print(f'Part 1: {partial * expense_line}')
-                break
+                return partial * expense_line
 
+    def part2(self):
         expense_report_list = list(self.expense_report)
 
         for i in range(0, len(self.expense_report)):
@@ -23,7 +26,4 @@ class Day1:
                 second_partial = first_partial - second_line
 
                 if second_partial in self.expense_report:
-                    print(f'Part 2: {first_line * second_partial * second_line}')
-                    exit(0)
-
-
+                    return first_line * second_partial * second_line

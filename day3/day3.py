@@ -1,5 +1,7 @@
 from enum import Enum
-from utils.utls import Coordinate
+
+from utils.base import Day
+from utils.utils import Coordinate
 
 
 class MapElements(Enum):
@@ -7,7 +9,7 @@ class MapElements(Enum):
     TREE = '#'
 
 
-class Day3:
+class Day3(Day):
 
     def __init__(self, area_map):
         self.area_map = area_map
@@ -58,7 +60,3 @@ class Day3:
             total_trees *= trees
 
         return total_trees
-
-    def solution(self):
-        print(f'Part 1: {self.part1()}')
-        print(f'Part 2: {self.part2()}')

@@ -11,5 +11,5 @@ class DayFactory:
             2: Day2,
             3: Day3
         }
-        print(f'Day {day}\n')
-        print(self.map.get(day)(input_data).solution())
+        print(f'Day {day}')
+        self.map.get(day)(input_data).solution()
