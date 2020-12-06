@@ -1,15 +1,13 @@
 import re
 
+from utils.base import Day
 
-class Day2:
+
+class Day2(Day):
 
     def __init__(self, password_file):
         self.password_file = password_file
         self.regex = r'^(\d+)-(\d+) ([a-z]): ([a-z]*)$'
-
-    def solution(self):
-        print(f'Part 1: {self.part1()}')
-        print(f'Part 2: {self.part2()}')
 
     def part1(self):
         valid_passwords = 0
