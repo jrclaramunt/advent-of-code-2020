@@ -5,6 +5,7 @@ from day4.day4 import Day4
 from day5.day5 import Day5
 from day6.day6 import Day6
 from day7.day7 import Day7
+from day8.day8 import Day8
 
 
 class DayFactory:
@@ -17,7 +18,8 @@ class DayFactory:
             4: Day4,
             5: Day5,
             6: Day6,
-            7: Day7
+            7: Day7,
+            8: Day8
         }
         print(f'Day {day}')
         self.map.get(day)(input_data).solution()
