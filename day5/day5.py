@@ -14,8 +14,8 @@ class Codes(Enum):
 
 class Day5(Day):
 
-    def __init__(self, nearby_boarding_passes):
-        self.nearby_boarding_passes = nearby_boarding_passes
+    def __init__(self, args):
+        self.nearby_boarding_passes = args[0]
         self.plane_seats = defaultdict(list)
         self.id_list = []
         self.n_rows = 128

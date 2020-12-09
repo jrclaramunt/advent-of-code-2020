@@ -67,8 +67,8 @@ class Runner:
 
 class Day8(Day):
 
-    def __init__(self, code_base):
-        self.code_base = code_base
+    def __init__(self, args):
+        self.code_base = args[0]
 
     def part1(self):
         return Runner().find_loop(self.code_base)

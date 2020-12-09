@@ -3,8 +3,8 @@ from utils.base import Day
 
 class Day1(Day):
 
-    def __init__(self, expense_report):
-        self.expense_report = set(map(lambda line: int(line), expense_report))
+    def __init__(self, args):
+        self.expense_report = set(map(lambda line: int(line), args[0]))
         self.total = 2020
 
     def part1(self):

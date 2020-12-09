@@ -6,8 +6,8 @@ from utils.base import Day
 
 class Day4(Day):
 
-    def __init__(self, passports):
-        self.passports = passports
+    def __init__(self, args):
+        self.passports = args[0]
         self.regex = r'([a-z]{3}):([a-zA-Z#0-9]+)[ |\n]'
 
     def is_passport_valid(self, field_list):

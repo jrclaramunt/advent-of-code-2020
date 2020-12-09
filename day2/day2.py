@@ -5,8 +5,8 @@ from utils.base import Day
 
 class Day2(Day):
 
-    def __init__(self, password_file):
-        self.password_file = password_file
+    def __init__(self, args):
+        self.password_file = args[0]
         self.regex = r'^(\d+)-(\d+) ([a-z]): ([a-z]*)$'
 
     def part1(self):
