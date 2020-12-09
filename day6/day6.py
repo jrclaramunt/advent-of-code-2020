@@ -3,8 +3,8 @@ from utils.base import Day
 
 class Day6(Day):
 
-    def __init__(self, answers):
-        self.answers = answers
+    def __init__(self, args):
+        self.answers = args[0]
 
     def part1(self):
         total = 0

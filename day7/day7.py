@@ -12,8 +12,8 @@ class Bag:
 
 class Day7(Day):
 
-    def __init__(self, rules):
-        self.rules = rules
+    def __init__(self, args):
+        self.rules = args[0]
         self.bag_regex = r'^([a-z ]+) bags contain (.+).$'
         self.contents_regex = r'(\d+) ([a-z ]+) bags?'
         self.initial_color = 'shiny gold'

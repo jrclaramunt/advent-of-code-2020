@@ -11,8 +11,8 @@ class MapElements(Enum):
 
 class Day3(Day):
 
-    def __init__(self, area_map):
-        self.area_map = area_map
+    def __init__(self, args):
+        self.area_map = args[0]
         self.current_position = Coordinate(0, 0)
         self.destination_row = len(self.area_map)
         self.slopes = [

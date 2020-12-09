@@ -6,8 +6,7 @@ from utils.base import Day
 class Day9(Day):
 
     def __init__(self, args):
-        port_output = args[0]
-        self.port_output = list(map(lambda x: int(x), port_output))
+        self.port_output = list(map(lambda x: int(x), args[0]))
         if args[1]['test']:
             self.number_preamble = 5
         else:
