@@ -6,11 +6,12 @@ from day5.day5 import Day5
 from day6.day6 import Day6
 from day7.day7 import Day7
 from day8.day8 import Day8
+from day9.day9 import Day9
 
 
 class DayFactory:
 
-    def __init__(self, day, input_data):
+    def __init__(self, day, *args):
         self.map = {
             1: Day1,
             2: Day2,
@@ -19,7 +20,8 @@ class DayFactory:
             5: Day5,
             6: Day6,
             7: Day7,
-            8: Day8
+            8: Day8,
+            9: Day9
         }
         print(f'Day {day}')
-        self.map.get(day)(input_data).solution()
+        self.map.get(day)(args).solution()
