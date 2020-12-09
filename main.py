@@ -22,4 +22,4 @@ if __name__ == '__main__':
 
     with open(input_path, 'r') as f:
         input_data = f.readlines()
-        DayFactory(day, input_data)
+        DayFactory(day, input_data, vars(args))
