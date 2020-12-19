@@ -1,4 +1,5 @@
 from day1.day1 import Day1
+from day15.day15 import Day15
 from day2.day2 import Day2
 from day3.day3 import Day3
 from day4.day4 import Day4
@@ -21,7 +22,8 @@ class DayFactory:
             6: Day6,
             7: Day7,
             8: Day8,
-            9: Day9
+            9: Day9,
+            15: Day15
         }
         print(f'Day {day}')
         self.map.get(day)(args).solution()
